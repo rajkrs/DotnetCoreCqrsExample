@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Commands\DeleteOrder\" />
+    <Folder Include="Commands\UpdateOrder\" />
+    <Folder Include="Notifications\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="FluentValidation" Version="8.5.0-preview5" />
+    <PackageReference Include="MediatR" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Raj.Infrastructure\Raj.Infrastructure.csproj" />
+    <ProjectReference Include="..\Raj.Order.Model\Raj.Order.Ef.csproj" />
+  </ItemGroup>
+
+</Project>
